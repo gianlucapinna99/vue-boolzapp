@@ -123,6 +123,7 @@ header{
 
 .contatti{
     background-color: white;
+    flex-grow: 1;
 }
 
 li {
@@ -134,10 +135,6 @@ li {
 }
 
 .contacts-list{
-    flex-grow: 1;
-    flex-basis: 0;
-    overflow-y: auto;
-    flex-direction: column;
     padding-left: 10px;
 }
 

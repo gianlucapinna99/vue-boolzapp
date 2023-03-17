@@ -24,7 +24,7 @@
         <div id="app" vcloak class="row g-0">
 
             <!-- COLONNA SINISTRA -->
-            <div class="col-4 left-column">
+            <div class="col-4 left-column h-100 d-flex flex-column">
 
                 <!-- HEADER -->
                 <header class="d-flex align-items-center justify-content-between" id="header-side">
@@ -66,9 +66,9 @@
                 </div>
 
                 <!-- CONTATTI -->
-                <div class="contatti">
-                    <ul class="contacts-list d-flex flex-wrap w-100">
-                        <!-- ciclo vfor elemento lista -->
+                <div class="contatti overflow-y-scroll">
+                    <ul class="contacts-list d-flex flex-wrap w-100 flex-column">
+                        <!-- ciclo vfor lista -->
                         <li v-for="(contact, index) in contacts">
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex">
@@ -83,7 +83,7 @@
                                 <div class="last-access">12.00</div>
                             </div>
                         </li>
-                        <!-- /ciclo vfor elemento lista -->
+                        <!-- /ciclo vfor lista -->
                     </ul>
                 </div>
             </div>
@@ -91,7 +91,7 @@
     
 
             <!-- COLONNA DESTRA -->
-            <div class="col-8 bg-primary">
+            <div class="col-8">
                 <header></header>
                 <div class="chat-box"></div>
                 <div></div>
