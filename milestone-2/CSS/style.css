@@ -1,0 +1,150 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* JS */
+[v-cloak] {
+    display: none;
+}
+
+
+
+/* DEBUG */
+
+#app{
+    background-color: white;
+}
+
+
+/* FONTS */
+
+
+.profile-info h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.contact-info h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+/* COMMON */
+.container-bg{
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to bottom, rgba(6,150,136,1) 13%, rgba(219,219,210,1) 13%);
+    height: 100vh;
+    width: 100vw;
+    padding: 20px 100px;
+}
+
+
+.icon-color{
+    color: #b1b1b1;
+    font-size: 17px;
+}
+
+#app {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+}
+
+
+/* COLONNA SINISTRA */
+
+.left-column{
+    background-color: #fafafa;
+}
+
+/* HEADER */
+header{
+    background-color: #eaeaea;
+}
+
+.col-4 header{
+    padding: 5px 10px 5px 5px;
+}
+
+.col-4 img{
+    width: 15%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+.prompt-notifications{
+    background-color: #8fdbfc;
+    padding: 10px;
+}
+
+.prompt-notifications a{
+    color: #667d82;
+}
+
+
+.fa-bell-slash{
+    color: #8edafc;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 10px;
+}
+
+/* SEARCH BAR */
+
+.search-bar{
+    margin: 10px;
+    background-color: white;
+}
+
+.search-bar input{
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.search-bar label i{
+    padding: 10px 20px 10px 20px;
+    border-right: 0.5px solid #fafafa;
+}
+
+/* CONTATTI */
+
+
+.contatti{
+    background-color: white;
+    flex-grow: 1;
+}
+
+li {
+    list-style: none
+}
+
+.contact-img img{
+    width: 50px;
+}
+
+.contacts-list{
+    padding-left: 10px;
+}
+
+.last-access{
+    padding-right: 10px;
+    font-size: 10px;
+    color: #b1b1b1;
+}
+
+.last-message{
+    font-size: 15px;
+    color: #b1b1b1;
+}
