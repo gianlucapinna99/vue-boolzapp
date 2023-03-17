@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /FONTS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Boolzap</title>
+</head>
+
+<body>
+    <div class="container-bg">
+
+        
+        <div id="app" vcloak class="row g-0">
+
+            <!-- COLONNA SINISTRA -->
+            <div class="col-4 left-column">
+
+                <!-- HEADER -->
+                <header class="d-flex align-items-center justify-content-between" id="header-side">
+                    
+                    <div class="d-flex align-items-center">
+                            <img :src="user.avatar" alt="user.name">                            
+                        <div class="profile-info">
+                            <h2 class="contact-name">{{user.name}}</h2>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <div>
+                            <i class="fa-solid fa-circle-notch icon-color"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-message icon-color"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-ellipsis-vertical icon-color"></i>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- NOTIFICHE -->
+                <div class="d-flex gap-2 prompt-notifications">
+                    <div class="bell-icon d-flex justify-center align-items-center">
+                        <i class="fa-solid fa-bell-slash"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Ricevi notifiche di nuovi messaggi</h2>
+                        <a href="https://media1.giphy.com/media/69Eocjqmh0hjxJ41Cg/giphy.gif?cid=ecf05e47rns6h0zqakyqj9qowy94xhjnkd2f6iynutexgtjr&rid=giphy.gif&ct=g" class="contact-access">Attiva notifiche desktop</a>
+                    </div>
+                </div>
+                
+                <!-- BARRA RICERCA -->
+                <div class="search-bar d-flex">
+                    <label for="search-bar"><i class="fa-solid fa-magnifying-glass icon-color"></i></label>
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" id="search-bar">
+                </div>
+
+                <!-- CONTATTI -->
+                <div class="contatti">
+                    <ul class="contacts-list d-flex flex-wrap w-100">
+                        <!-- ciclo vfor elemento lista -->
+                        <li v-for="(contact, index) in contacts">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <div class="contact-img">
+                                        <img :src="contact.avatar" alt="profile image">
+                                    </div>                  
+                                    <div class="contact-info">
+                                        <div class="contact-name">{{contact.name}}</div>
+                                        <div class="last-message">{{last-message}}</div>
+                                    </div>
+                                </div>
+                                <div class="last-access">12.00</div>
+                            </div>
+                        </li>
+                        <!-- /ciclo vfor elemento lista -->
+                    </ul>
+                </div>
+            </div>
+            <!-- /COLONNA SINISTRA -->
+    
+
+            <!-- COLONNA DESTRA -->
+            <div class="col-8 bg-primary">
+                <header></header>
+                <div class="chat-box"></div>
+                <div></div>
+            </div>
+            <!-- /COLONNA DESTRA -->
+
+        </div>
+        
+
+    <!-- VUEJS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- JSLINK -->
+    <script src="js/main.js"></script>
+</body>
+</html>
