@@ -39,9 +39,6 @@ Creo un array che contenga le informazioni dei contatti (Nome, Immagine,) e con 
 
 ---
 
--Creo funzione che prende elemento inserito nella sezione di invio messaggio, lo prendo e lo aggiungo nell'array come nuovo messaggio alla chat con index uguale a quello della chat attiva, conm data casuale e stato inviato
--Creo una funzione collegata a quella sopra che con un ritardo di 1 secondo invii un messaggio di risposta con data causuale, stato ricevuto e messaggio "ok"
-
 # MILESTONE 4
 
 - Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
