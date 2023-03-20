@@ -184,6 +184,9 @@ createApp({
             this.currentChat = index;
           },//Metodo per selezionare chat attiva 
     sendNewMessage(currentChat){
+        if (!this.message.trim()) {
+            return; // Se l'input è vuoto, la funzione non parte
+          }
         const messageSent = {
             date: '20/03/2023 21:43:00',
             message: this.message,
