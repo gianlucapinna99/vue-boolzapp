@@ -69,7 +69,6 @@
                 <div class="contatti overflow-y-scroll flex-grow-1">
 
                     <ul class="contacts-list d-flex flex-wrap w-100 flex-column">
-
                         <li v-for="(contact, index) in contacts" :class="{'selected' : currentChat===index}"  @click="activeChat(index)">
                             <div class="d-flex justify-content-between">
                                 <div class="d-flex">
@@ -84,7 +83,6 @@
                                 <div class="last-access">12.00</div>
                             </div>
                         </li>
-
                     </ul>
 
                 </div>
@@ -132,7 +130,7 @@
 
                 <!-- SEND MESSAGE -->
                 <footer class="send-message d-flex align-items-center">
-                    <label for="search-bar"><i class="fa-regular fa-face-smile"></i></i></label>
+                    <label for="search-bar"><i class="fa-regular fa-face-smile"></i></label>
                     <input type="text" placeholder="Scrivi un messaggio" class="search-bar">
                     <label for="search"><i class="fa-solid fa-microphone"></i></label>
                 </footer>

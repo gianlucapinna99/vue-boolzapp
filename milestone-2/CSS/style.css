@@ -184,9 +184,6 @@ li {
     background-image: url("../../img/mine.jpg");
 }
 
-.selected{
-    background-color: #e9ebeb;
-}
 .content-box {
     margin: 0 auto;
     height: 100%;
@@ -221,7 +218,7 @@ li {
 }
 
 .selected{
-    background-color: #e9ebeb;
+    background-color: #e9eaea;
 }
 
 
@@ -235,7 +232,3 @@ li {
 
 
 
-/* JS */
-[v-cloak] {
-    display: none;
-}

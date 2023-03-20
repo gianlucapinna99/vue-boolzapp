@@ -178,9 +178,9 @@ createApp({
         }
     },
     methods: {
-        activeChat: (index) => {
+        activeChat(index){
             this.currentChat = index;
-            console.log(currentChat)
-          },  //Metodo per selezionare chat attiva
+            console.log(this.currentChat)
+          },//Metodo per selezionare chat attiva
     }
 }).mount('#app')
