@@ -1,12 +1,12 @@
 'use strict'
 
-
 const { createApp } = Vue
 
 //Crea APP con struttura dati
 createApp({
     data() {
         return {
+            currentChat: 0,
             user: {
                 name: 'Gianluca',
                 avatar: '../img/avatar_4.jpg',
@@ -178,6 +178,9 @@ createApp({
         }
     },
     methods: {
-        
+        activeChat: (index) => {
+            this.currentChat = index;
+            console.log(currentChat)
+          },  //Metodo per selezionare chat attiva
     }
 }).mount('#app')

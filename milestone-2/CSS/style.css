@@ -6,19 +6,9 @@
     box-sizing: border-box;
 }
 
-
-/* JS */
-[v-cloak] {
-    display: none;
-}
-
-
-
 /* DEBUG */
 
-#app{
-    background-color: white;
-}
+
 
 
 /* FONTS */
@@ -36,6 +26,14 @@
     margin-bottom: 0px;
 }
 
+.profile-info h3{
+    font-size: 12px;
+    align-items: end;
+}
+
+h3{
+    margin: 0px;
+}
 /* COMMON */
 .container-bg{
     font-family: 'Lato', sans-serif;
@@ -68,14 +66,12 @@
 /* HEADER */
 header{
     background-color: #eaeaea;
-}
-
-.col-4 header{
-    padding: 5px 10px 5px 5px;
+    height: 75px;
+    padding: 10px;
 }
 
 .col-4 img{
-    width: 15%;
+    height: 60px;
     border-radius: 50%;
     padding: 5px;
 }
@@ -105,12 +101,14 @@ header{
 .search-bar{
     margin: 10px;
     background-color: white;
+    border-radius: 10px;
 }
 
 .search-bar input{
     border: none;
     width: 100%;
     padding-left: 10px;
+    border-radius: 3px;
 }
 
 .search-bar label i{
@@ -123,7 +121,6 @@ header{
 
 .contatti{
     background-color: white;
-    flex-grow: 1;
 }
 
 li {
@@ -135,6 +132,10 @@ li {
 }
 
 .contacts-list{
+    padding-left: 0px;
+}
+
+.contacts-list li{
     padding-left: 10px;
 }
 
@@ -147,4 +148,94 @@ li {
 .last-message{
     font-size: 15px;
     color: #b1b1b1;
+}
+
+.col-8 img{
+    width: 60px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* RIGH COLUMN */
+
+.send-message{
+    background-color: #f3eeea;
+}
+
+.send-message input{
+    width: 100%;
+    margin: 5px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.send-message label i{
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px 10px;
+    color: #6b7376;
+}
+
+
+.chat-box{
+    background-image: url("../../img/mine.jpg");
+}
+
+.selected{
+    background-color: #e9ebeb;
+}
+.content-box {
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    margin-top: 30px;
+    gap: 7px;
+}
+
+.content-mx {
+    padding: 15px 15px;
+    padding-top: 10px;
+}
+
+.content-messages {
+    width: 47%;
+    border-radius: 15px;
+}
+
+.time-mx {
+    padding-right: 9px;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+
+.sent {
+    background-color: #d5f9ba;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #ffffff;
+}
+
+.selected{
+    background-color: #e9ebeb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* JS */
+[v-cloak] {
+    display: none;
 }
